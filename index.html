@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function randomnumber()
+{
+  var x=0;
+  num = document.getElementById("num").value;
+  while(num)
+  {
+    x = num;
+    num = Math.floor(Math.random() * 20);
+  }
+  document.getElementById("result").value = x;
+}
+</script>
+</head>
+<body>
+
+<p>Enter the Number: <input id="num"></p>
+<button onclick="randomnumber()">Generate Random Number</button>
+<p>Result = <input id="result"></p>
+
+</body>
+</html>
